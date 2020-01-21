@@ -74,10 +74,10 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(Bids)" // Who made the changes. Bids: Change if you wish - informational only
+#define STRING_CONFIG_H_AUTHOR "deltwalrus" // Who made the changes. Bids: Change if you wish - informational only
 #define SHOW_BOOTSCREEN
-#define STRING_SPLASH_LINE1 "1.1.9 Aug 9th 2019" // will be shown during bootup in line 1
-#define STRING_SPLASH_LINE2 "Bids'O'KosselLP"         // will be shown during bootup in line 2. Bids - Change if you wish - informational only
+#define STRING_SPLASH_LINE1 "1.1.9 QUIET!" // will be shown during bootup in line 1
+#define STRING_SPLASH_LINE2 "Quiet Kossel"         // will be shown during bootup in line 2. Bids - Change if you wish - informational only
 
 /**
  * *** VENDORS PLEASE READ ***
@@ -129,7 +129,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "BIDS" // Bids: Name your printer whatever you wish
+#define CUSTOM_MACHINE_NAME "QuietKossel" // Bids: Name your printer whatever you wish
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -941,7 +941,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false // Jeff: toggled from true to false after installing TMC2208
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
